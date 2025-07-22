@@ -65,24 +65,3 @@ Aunque solo usarás dark mode, podés dejar la estructura preparada por si quisi
 
 ✅ Botón de color secundario:
 Botones destacados ➔ bg-emerald-400 hover:bg-emerald-300 text-gray-900.
-
-🎯 Así se vería en estructura:   
-
-```tsx
-<div className="bg-gray-950 text-gray-200 min-h-screen">
-  <nav className="bg-gray-900 border-b border-gray-700 text-gray-100">
-    {/* Navbar */}
-  </nav>
-  <div className="flex">
-    <aside className="bg-gray-800 w-64">
-      {/* Sidebar */}
-    </aside>
-    <main className="flex-1 p-4 overflow-y-auto bg-gray-950">
-      {/* Main */}
-    </main>
-  </div>
-  <footer className="bg-gray-900 text-gray-400 p-4 text-center">
-    {/* Footer */}
-  </footer>
-</div>
-```
