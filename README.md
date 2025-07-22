@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Propuesta de colores   
 
-## Getting Started
+1️⃣ Navbar
+* Fondo: bg-gray-900
+* Texto: text-gray-100
+* Hover enlaces: text-blue-400
+* Borde bottom opcional: border-b border-gray-700
 
-First, run the development server:
+2️⃣ Sidebar
+* Fondo: bg-gray-800
+* Texto: text-gray-200
+* Hover item activo: bg-gray-700
+* Indicador activo: text-blue-400 o border-l-4 border-blue-400
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+3️⃣ Main
+* Fondo: bg-gray-950 (casi negro, descansa la vista)
+* Texto: text-gray-200 para cuerpo, text-white para títulos
+* Enlaces: text-blue-400 hover:text-blue-300
+* Code blocks: bg-gray-900 con texto text-gray-100
+
+4️⃣ Footer
+* Fondo: bg-gray-900
+* Texto: text-gray-400
+* Enlaces: text-blue-400 hover:text-blue-300
+
+🎨 Paleta base resumida:
+Grises:
+* gray-950 (main bg)
+* gray-900 (navbar, footer)
+* gray-800 (sidebar)
+* gray-700 (hover en sidebar)
+* gray-100 / 200 (texto)
+* Color principal:
+* blue-400 (links, indicadores activos)
+* blue-300 (hover links)
+* Secundario opcional para CTA:
+* emerald-400 para botones de acción importante.
+
+✅ Justificación accesibilidad:
+* gray-950 + gray-200 ➔ Ratio de contraste > 15:1 (AAA).
+* gray-900 + gray-100 ➔ Ratio > 12:1 (AAA).
+* blue-400 en gray-900/950 ➔ Ratio > 4.5:1 (AA), con excelente legibilidad.
+* Evitar saturados como blue-500 o blue-600 para texto porque en dark mode cansan.
+
+✨ Sugerencias adicionales:
+✅ Espaciado y tipografía:
+
+Usa prose prose-invert en la documentación para facilitar lectura en dark mode.
+Usa tracking-wide en títulos para mejorar legibilidad.
+
+✅ Scroll suave en el main:
+
+```tsx
+<main className="scroll-smooth">
+```   
+
+✅ Animación en hover de links:   
+
+```tsx
+transition-colors duration-200 ease-in-out
+```   
+
+✅ Soporte para prefers-color-scheme en Tailwind:
+Aunque solo usarás dark mode, podés dejar la estructura preparada por si quisieras opcionalidad en el futuro.
+
+✅ Botón de color secundario:
+Botones destacados ➔ bg-emerald-400 hover:bg-emerald-300 text-gray-900.
+
+🎯 Así se vería en estructura:   
+
+```tsx
+<div className="bg-gray-950 text-gray-200 min-h-screen">
+  <nav className="bg-gray-900 border-b border-gray-700 text-gray-100">
+    {/* Navbar */}
+  </nav>
+  <div className="flex">
+    <aside className="bg-gray-800 w-64">
+      {/* Sidebar */}
+    </aside>
+    <main className="flex-1 p-4 overflow-y-auto bg-gray-950">
+      {/* Main */}
+    </main>
+  </div>
+  <footer className="bg-gray-900 text-gray-400 p-4 text-center">
+    {/* Footer */}
+  </footer>
+</div>
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
