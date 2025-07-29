@@ -76,6 +76,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, height }) => {
               height: `${height}px`,
               borderColor:"gray",
               border:"2px solid",
+              fontFamily:"monospace"
             }}
           >
             {tokens.map((line, i) => (

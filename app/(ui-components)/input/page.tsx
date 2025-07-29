@@ -9,10 +9,11 @@ export default function Page() {
 
     type InputProps = {
        label?: string;
+       classNameLabel?: string;
        name: string;
        type?: string;
        placeholder?: string;
-       value?: string;
+      value?: string;
       onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
       className?: string;
       disabled?: boolean;
@@ -21,6 +22,7 @@ export default function Page() {
 
     export const Input: React.FC<InputProps> = ({
       label,
+      classNameLabel = "",
       name,
       type = "text",
       placeholder = "",
@@ -115,6 +117,8 @@ export default function Page() {
       <h2 className="title-lg">Explicación de cada prop (propiedad)</h2>
       <p className="text-base leading-8">
         <span className="highlight">label?: string;</span> Texto opcional que aparece arriba del input
+        <br />
+        <span className="highlight">classNameLabel?: string;</span> Estilo del label.
         <br />
         <span className="highlight">name: string;</span> Identificador del campo (para HTML y formularios)
         <br />
