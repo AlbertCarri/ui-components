@@ -57,23 +57,25 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, height }) => {
   };
 
   return (
-    <div className="relative mt-12 w-1/2 mx-auto">
+    <div className="relative mt-12 w-3/4">
       <button
         onClick={handleCopy}
         className="absolute w-16 p-2 text-sm text-amber-50 rounded-xl right-4 top-2 cursor-pointer"
       >
         {copied ? copyYet : copy}
       </button>
-      <Highlight theme={themes.nightOwl} code={code} language={language}>
+      <Highlight theme={themes.oneDark} code={code} language={language}>
         {({ style, tokens, getLineProps, getTokenProps }) => (
           <pre
             style={{
               ...style,
               borderRadius: "1rem",
-              fontSize: "0.7rem",
+              fontSize: "1rem",
               overflowX: "auto",
               padding: "1rem",
               height: `${height}px`,
+              borderColor:"gray",
+              border:"2px solid",
             }}
           >
             {tokens.map((line, i) => (

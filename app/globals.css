@@ -12,6 +12,38 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Resaltado de textos*/
+
+.highlight {
+  @apply bg-gray-700 px-1 rounded font-semibold;
+}
+
+/* Viñetas puntos*/
+
+.bullet {
+  @apply list-disc pl-14 mt-4 text-gray-400 text-xl/8;
+}
+
+/* Títulos h1,h2.......*/
+
+.title-xl {
+  @apply text-4xl text-white font-bold;
+}
+
+.title-lg {
+  @apply mt-8 text-3xl text-white font-bold;
+}
+
+.title-md {
+  @apply mt-8 text-2xl text-white font-bold;
+}
+
+/* Texto de párrafo normal*/
+
+.text-base {
+  @apply mt-4 text-xl text-gray-400;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -25,6 +57,7 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--font-mono), monospace; /* o directamente var(--font-geist-mono) */
 }

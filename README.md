@@ -86,3 +86,36 @@ Botones destacados ➔ bg-emerald-400 hover:bg-emerald-300 text-gray-900.
   </footer>
 </div>
 ```
+
+## 📚 ¿Qué vas a encontrar?   
+
+Dentro del menú de navegación vas a poder acceder a diferentes tipos de componentes agrupados por funcionalidad o categoría, como por ejemplo:
+
+* Botones (Button)
+* Inputs de texto (TextInput)
+* Modales (Modal)
+* Alertas y mensajes (Alert, Toast)
+* Tarjetas (Card)
+* Spinners de carga (Spinner)
+* Componentes de layout (Container, Grid, Section)
+
+### Cada componente incluye:
+
+✅ Una descripción general de su uso y propósito.
+✅ Una vista previa visual (renderizado en tiempo real).
+✅ Un ejemplo básico de implementación.
+✅ Un listado de propiedades (props) personalizables, con explicación de su tipo y comportamiento.
+✅ Notas de accesibilidad y comportamiento responsive si aplica.
+
+### 🔧 Buenas prácticas aplicadas   
+
+* Inmutabilidad del estado (cuando se requiere manipulación interna).
+* Props bien tipadas y documentadas, usando interface o type para claridad y autocompletado.
+* Composición: los componentes permiten insertar contenido dinámico mediante children.
+* Estilos desacoplados y reutilizables mediante clases utilitarias de Tailwind.
+
+⚙️ ¿Cómo están diseñados?
+Cada componente fue pensado para adaptarse a distintos escenarios sin necesidad de reescribir lógica. Por ejemplo, un botón puede cambiar de color, tamaño o comportamiento mediante props como variant, size, onClick, y disabled, entre otros.
+
+Además, se evita la lógica innecesaria dentro del componente, y se promueve que cada pieza tenga una única responsabilidad.
+
