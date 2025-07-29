@@ -119,3 +119,5 @@ Cada componente fue pensado para adaptarse a distintos escenarios sin necesidad 
 
 Además, se evita la lógica innecesaria dentro del componente, y se promueve que cada pieza tenga una única responsabilidad.
 
+=======
+>>>>>>> 8031d1d7d1214513fac84c2222888232328c9f9b
