@@ -44,10 +44,10 @@ export default function RootLayout({
             <Navbar />
           </header>
           <div className="flex flex-row">
-            <aside className="w-60">
+            <aside className="w-84">
               <SideBar/>
             </aside>
-            <main className="w-[calc(100vw-240px)]">{children}</main>
+            <main className="w-[calc(100vw-320px)]">{children}</main>
           </div>
         </div>
         <Footer />

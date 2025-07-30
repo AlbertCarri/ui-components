@@ -84,7 +84,7 @@ export default function Page() {
     }`;
 
   return (
-    <div className="flex flex-col mt-6 py-4 px-10 text-gray-200">
+    <div className="flex flex-col mt-6 py-8 px-16 text-gray-200">
       <h1 className="title-xl">¿Qué hace este componente Input?</h1>
       <p className="text-base">
         El componente Input es una caja de texto reutilizable que permite
@@ -113,7 +113,7 @@ export default function Page() {
           Permite agregarle un label (etiqueta) opcional arriba del campo.
         </li>
       </ul>
-      <CodeBlock code={code} language="tsx" height={400} />
+      <CodeBlock code={code} language="tsx" height={700} />
       <h2 className="title-lg">Explicación de cada prop (propiedad)</h2>
       <p className="text-base leading-8">
         <span className="highlight">label?: string;</span> Texto opcional que aparece arriba del input
@@ -156,7 +156,7 @@ export default function Page() {
         </li>
       </ul>
       <h2 className="title-lg">Ejemplos de uso:</h2>
-      <CodeBlock code={codeTest} language="tsx" height={200} />
+      <CodeBlock code={codeTest} language="tsx" height={400} />
       <h2 className="title-lg">¿Qué hace esto?</h2>
       <h3 className="title-md">Ejemplo 1:</h3>
       <ul className="bullet">

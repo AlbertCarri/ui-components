@@ -23,8 +23,8 @@ export const SidebarWrapper = () => {
   };
 
   return (
-    <aside className="fixed p-4 top-18 left-0 h-[calc(100vh-3rem)] w-60 text-xl bg-gray-800 text-gray-200">
-      <nav className="flex flex-col gap-2">
+    <aside className="fixed p-4 top-18 left-0 h-[calc(100vh-3rem)] w-80 text-xl bg-gray-800 text-gray-200">
+      <nav className="flex flex-col gap-2 ml-8">
         {links.map((item, index) => (
           <div key={index}>
             <div className="flex">

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import { Highlight, themes } from "prism-react-renderer";
@@ -64,19 +64,21 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, height }) => {
       >
         {copied ? copyYet : copy}
       </button>
+
       <Highlight theme={themes.oneDark} code={code} language={language}>
         {({ style, tokens, getLineProps, getTokenProps }) => (
           <pre
             style={{
               ...style,
-              borderRadius: "1rem",
+              borderRadius: "4px",
+              borderTopLeftRadius:"2rem",
               fontSize: "1rem",
               overflowX: "auto",
               padding: "1rem",
               height: `${height}px`,
-              borderColor:"gray",
-              border:"2px solid",
-              fontFamily:"monospace"
+              borderColor: "gray",
+              border: "2px solid",
+              fontFamily: "monospace",
             }}
           >
             {tokens.map((line, i) => (

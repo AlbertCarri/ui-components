@@ -56,8 +56,3 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
-
-code,
-pre {
-  font-family: var(--font-mono), monospace; /* o directamente var(--font-geist-mono) */
-}

@@ -48,7 +48,7 @@ export default function Page() {
     }`;
 
   return (
-    <div className="flex flex-col mt-6 py-4 px-8 text-gray-200">
+    <div className="flex flex-col mt-6 py-8 px-16 text-gray-200 ">
       <h1 className="title-xl">
         Button reutilizable usando TypeScript
       </h1>
@@ -74,7 +74,7 @@ export default function Page() {
           Maneja su estado disabled, lo que lo hace más seguro y accesible.
         </li>
       </ul>
-      <CodeBlock code={code} language="tsx" height={400} />
+      <CodeBlock code={code} language="tsx" height={740} />
       <h2 className="title-lg">
         2. Propiedades (props) bien definidas
       </h2>
@@ -128,7 +128,7 @@ export default function Page() {
         </li>
       </ul>
 
-      <CodeBlock code={codeTest} language="tsx" height={200} />
+      <CodeBlock code={codeTest} language="tsx" height={300} />
       <h2 className="mt-8 text-3xl text-white">Ejemplo funcionando:</h2>
       <Button
         type="button"
