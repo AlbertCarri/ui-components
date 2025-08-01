@@ -8,7 +8,7 @@ import {
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronRight, X } from "lucide-react";
 
 export const SidebarWrapper = () => {
   const usePath = usePathname();
@@ -55,7 +55,7 @@ export const SidebarWrapper = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.4 }}
                 >
                   <div className="ml-4 flex flex-col gap-1">
                     {item.subItems.map((sub, i) => (

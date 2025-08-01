@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col mt-6 py-8 px-16">
+    <div className="flex flex-col mt-6 py-14 px-16">
       <h1 className="title-xl">
         Introducción al Manual de Componentes UI
       </h1>

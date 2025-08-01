@@ -121,3 +121,12 @@ Además, se evita la lógica innecesaria dentro del componente, y se promueve qu
 
 =======
 >>>>>>> 8031d1d7d1214513fac84c2222888232328c9f9b
+
+
+si, necesitaría el componente reutilizable, en TypeScript con los siguientes puntos a considerar:
+
+✅ Una descripción general de su uso y propósito.
+✅ Una vista previa visual (renderizado en tiempo real).
+✅ Un ejemplo básico de implementación.
+✅ Un listado de propiedades (props) personalizables, con explicación de su tipo y comportamiento.
+✅ Notas de accesibilidad y comportamiento responsive si aplica.

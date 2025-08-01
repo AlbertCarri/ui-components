@@ -17,6 +17,7 @@ export const sidebarLinks = [
     subItems: [
       { title: "Botones", href: "/button" },
       { title: "Inputs", href: "/input" },
+      { title: "Modal", href: "/modal" },
     ],
   },
 ];
