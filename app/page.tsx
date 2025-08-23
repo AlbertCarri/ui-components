@@ -1,9 +1,9 @@
+import Ojos from "@/components/Ojos";
+
 export default function Home() {
   return (
     <div className="flex flex-col mt-6 py-14 px-16">
-      <h1 className="title-xl">
-        Introducción al Manual de Componentes UI
-      </h1>
+      <h1 className="title-xl">Introducción al Manual de Componentes UI</h1>
       <p className="text-base">
         Bienvenido/a al manual de componentes UI reutilizables desarrollados en
         React con TypeScript y estilizados con Tailwind CSS. Este manual tiene
@@ -19,6 +19,7 @@ export default function Home() {
         Dentro del menú de navegación vas a poder acceder a diferentes tipos de
         componentes agrupados por funcionalidad o categoría, como por ejemplo:
       </p>
+      <Ojos />
       <ul className="bullet">
         <li>Botones (Button)</li>
         <li>Inputs de texto (TextInput)</li>

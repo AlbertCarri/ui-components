@@ -44,6 +44,10 @@
   @apply mt-4 text-xl text-gray-400;
 }
 
+.code{
+  @apply font-mono bg-gray-700 p-4 rounded-2xl
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

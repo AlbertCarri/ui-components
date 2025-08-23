@@ -20,4 +20,16 @@ export const sidebarLinks = [
       { title: "Modal", href: "/modal" },
     ],
   },
+  {
+    title:"Components Radix-UI",
+    href:"/radix-ui",
+    active: false,
+    subItems:[
+      {title:"Button",href:"/button-radix"},
+      {title:"DropDown Menu",href:"/dropdownmenu-radix"},
+      {title:"Input Label",href:"/inputLabel-radix"},
+      {title:"Modal",href:"/modalDialog-radix"},
+      {title:"Switch",href:"/switch-radix"},
+    ]
+  }
 ];
