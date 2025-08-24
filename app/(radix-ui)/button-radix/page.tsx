@@ -101,13 +101,30 @@ export default function ButtonRadix() {
         <h2 className="title-lg">Ejemplos de uso</h2>
         <CodeBlock code={codeTest} language="tsx" height={100} />
         <br></br>
-        <Button onClick={() => alert("click")} className="bg-blue-600 hover:bg-blue-700">Guardar</Button>
+        <Button
+          onClick={() => alert("click")}
+          className="bg-blue-600 hover:bg-blue-700"
+        >
+          Guardar
+        </Button>
         <br></br>
         <CodeBlock code={codeTest2} language="tsx" height={160} />
         <br></br>
         <Button asChild className="bg-amber-900 hover:bg-amber-800">
           <a href="#">Ir al Home</a>
         </Button>
+        <br></br>
+        <h2 className="title-lg">Resumen</h2>
+        <p className="text-base">
+          “Este componente es un botón accesible y flexible. Usa las props
+          nativas de HTML para mantener compatibilidad, pero incorpora{" "}
+          <span className="highlight">asChild</span> y el{" "}
+          <span className="highlight">Slot</span> de Radix para hacerlo
+          componible y permitir que otros elementos —como un enlace o un
+          componente de routing— adopten los estilos y la semántica del botón.
+          De esta forma puedo usar una misma API para distintos contextos, sin
+          duplicar lógica ni estilos.”
+        </p>
       </motion.div>
     </div>
   );

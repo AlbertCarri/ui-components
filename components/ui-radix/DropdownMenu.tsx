@@ -8,15 +8,19 @@ export function Dropdown() {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="bg-white rounded-md shadow-md p-2">
-          <DropdownMenu.Item className="px-3 py-2 hover:bg-gray-100 rounded-md">
+        <DropdownMenu.Content className="bg-white text-black rounded-md shadow-md p-2">
+          <DropdownMenu.Item 
+          onSelect={()=>alert("Seleccionaste perfil")}
+          className="px-3 py-2 hover:bg-gray-400 rounded-md">
             Perfil
           </DropdownMenu.Item>
-          <DropdownMenu.Item className="px-3 py-2 hover:bg-gray-100 rounded-md">
+          <DropdownMenu.Item 
+          onSelect={()=>alert("Seleccionaste Configuración")}
+          className="px-3 py-2 hover:bg-gray-400 rounded-md">
             Configuración
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="h-px bg-gray-200 my-1" />
-          <DropdownMenu.Item className="px-3 py-2 hover:bg-gray-100 rounded-md">
+          <DropdownMenu.Item className="px-3 py-2 hover:bg-gray-400 rounded-md">
             Salir
           </DropdownMenu.Item>
         </DropdownMenu.Content>

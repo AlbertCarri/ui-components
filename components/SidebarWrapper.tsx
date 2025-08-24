@@ -30,6 +30,10 @@ export const SidebarWrapper = () => {
             <div className="flex">
               <Link
                 href={item.href}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleSubmenu(index);
+                }}
                 className={`block px-2 py-1 rounded hover:bg-gray-700 ${
                   usePath === item.href ? "font-semibold text-blue-400" : ""
                 }`}

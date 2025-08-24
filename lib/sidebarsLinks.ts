@@ -26,9 +26,9 @@ export const sidebarLinks = [
     active: false,
     subItems:[
       {title:"Button",href:"/button-radix"},
-      {title:"DropDown Menu",href:"/dropdownmenu-radix"},
-      {title:"Input Label",href:"/inputLabel-radix"},
-      {title:"Modal",href:"/modalDialog-radix"},
+      {title:"DropDown Menu",href:"/dropdownmenu"},
+      {title:"Input Label",href:"/input-label"},
+      {title:"Modal",href:"/modal-radix"},
       {title:"Switch",href:"/switch-radix"},
     ]
   }
