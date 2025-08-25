@@ -89,7 +89,9 @@ Botones destacados ➔ bg-emerald-400 hover:bg-emerald-300 text-gray-900.
 
 ## 📚 ¿Qué vas a encontrar?   
 
-Dentro del menú de navegación vas a poder acceder a diferentes tipos de componentes agrupados por funcionalidad o categoría, como por ejemplo:
+Dentro del menú de navegación vas a poder acceder a diferentes tipos de componentes React+TypeScipt y componentes desarrollados con Radix-ui+TypeScript agrupados por funcionalidad o categoría, como por ejemplo:
+
+### Componentes reutilizables desarrollados con TypeScipt:
 
 * Botones (Button)
 * Inputs de texto (TextInput)
@@ -101,11 +103,11 @@ Dentro del menú de navegación vas a poder acceder a diferentes tipos de compon
 
 ### Cada componente incluye:
 
-✅ Una descripción general de su uso y propósito.
-✅ Una vista previa visual (renderizado en tiempo real).
-✅ Un ejemplo básico de implementación.
-✅ Un listado de propiedades (props) personalizables, con explicación de su tipo y comportamiento.
-✅ Notas de accesibilidad y comportamiento responsive si aplica.
+✅ Una descripción general de su uso y propósito.   
+✅ Una vista previa visual (renderizado en tiempo real).   
+✅ Un ejemplo básico de implementación.   
+✅ Un listado de propiedades (props) personalizables, con explicación de su tipo y comportamiento.   
+✅ Notas de accesibilidad y comportamiento responsive si aplica.   
 
 ### 🔧 Buenas prácticas aplicadas   
 
@@ -117,16 +119,48 @@ Dentro del menú de navegación vas a poder acceder a diferentes tipos de compon
 ⚙️ ¿Cómo están diseñados?
 Cada componente fue pensado para adaptarse a distintos escenarios sin necesidad de reescribir lógica. Por ejemplo, un botón puede cambiar de color, tamaño o comportamiento mediante props como variant, size, onClick, y disabled, entre otros.
 
-Además, se evita la lógica innecesaria dentro del componente, y se promueve que cada pieza tenga una única responsabilidad.
+Además, se evita la lógica innecesaria dentro del componente, y se promueve que cada pieza tenga una única responsabilida.   
 
-=======
->>>>>>> 8031d1d7d1214513fac84c2222888232328c9f9b
+---
+## Componentes desarrollados con Radix-ui + TypeScript:   
+
+1. ¿Qué es Radix UI?
+
+Radix UI es una librería de componentes accesibles y sin estilos predefinidos para React.
+
+Su enfoque es "unstyled": te da la funcionalidad y accesibilidad, y vos elegís cómo estilarlos (por ejemplo, con Tailwind).
+Está diseñada para cumplir con las normas de accesibilidad (ARIA), lo cual es clave para usuarios con lectores de pantalla, teclados, etc.
+Se integra perfectamente con Next.js, Vite o CRA.
+👉 En resumen: Radix UI te da la lógica y accesibilidad, vos le das el estilo.
 
 
-si, necesitaría el componente reutilizable, en TypeScript con los siguientes puntos a considerar:
+2. Un poco de historia
+Radix UI fue creada por Modulz, los mismos detrás de Stitches y WorkOS.
+La motivación fue evitar reinventar la rueda con componentes complejos (ej: modales, menús, popovers), garantizando accesibilidad y buenas prácticas.
+A diferencia de librerías como Material UI o Chakra UI, Radix no impone diseño: es agnóstico y flexible.
+3. Instalación
+Si ya tenés un proyecto con React y necesitas hacer un Modal:
 
-✅ Una descripción general de su uso y propósito.
-✅ Una vista previa visual (renderizado en tiempo real).
-✅ Un ejemplo básico de implementación.
-✅ Un listado de propiedades (props) personalizables, con explicación de su tipo y comportamiento.
-✅ Notas de accesibilidad y comportamiento responsive si aplica.
+```
+npm install @radix-ui/react-dialog
+```
+(instalás los paquetes que necesites, no hace falta todo Radix junto)
+
+4. Principios de uso
+Cada componente de Radix está dividido en primitivas (Root, Trigger, Content, etc.).
+Ejemplo: un Dialog (modal) se arma con piezas:
+Dialog.Root → envuelve todo.
+Dialog.Trigger → botón que abre.
+Dialog.Content → contenido del modal.
+Dialog.Close → botón de cierre.
+Esto parece mucho, pero da control total.
+
+### Lista de componentes Radix:
+* Boton (button) usando la librería slot
+* Dropdown Menu
+* Input (input + label) usando la librería label
+* Modal usando la librería dialog
+* Switch
+
+  
+
