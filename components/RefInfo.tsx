@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+interface Data {
+  fromServer: { referer: string; userAgent: string };
+  Timestamp: string;
+}
+
 export default function RefInfo() {
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<Data | null>(null);
   const [clientRef, setClientRef] = useState("");
 
   useEffect(() => {
