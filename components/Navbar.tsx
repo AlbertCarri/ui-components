@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex flex-row bg-slate-900 h-18 justify-between p-2 border-b border-gray-700">
+    <nav className="fixed top-0 left-0 w-full z-50 flex flex-row bg-slate-900 h-18 justify-between items-center p-2 border-b border-gray-700">
       <div>
         <Link href={"/"}>
           <img
             src={"/edelbyteLOGO-horizontal.png"}
             style={{ marginTop: "-5px" }}
-            width={200}
+            width={160}
             className="transition duration-400 hover:scale-90 hover:text-sky-200"
             alt="isologo edelbyte"
           />
