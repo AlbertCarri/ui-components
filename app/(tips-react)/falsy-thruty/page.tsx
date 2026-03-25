@@ -75,7 +75,7 @@ export default function FalsyThruty() {
         <br></br>
         <p className="text-base">
           En JavaScript, solo existen <b>7 valores</b> que siempre se evalúan como
-          <b>false</b>. Si tu variable contiene cualquiera de estos, el if
+          <b> false</b>. Si tu variable contiene cualquiera de estos, el if
           (variable) <b>no se cumplirá</b>:
         </p>
         <br></br>
@@ -336,7 +336,7 @@ export default function FalsyThruty() {
           </code>{" "}
           es la forma más común y {'"limpia"'} (idiomática) que verás en el
           código moderno de JavaScript y React. Sin embargo, hay una
-          <b>diferencia técnica crucial</b> entre usar <b>!user.id</b> y <b>user.id ==
+          <b> diferencia técnica crucial</b> entre usar <b>!user.id</b> y <b>user.id ==
           null</b>. Para tu libro, esta distinción es el nivel {'"Senior"'}:
         </p>
         <h2 className="title-lg">
@@ -346,7 +346,7 @@ export default function FalsyThruty() {
         <p className="text-base">
           Cuando usas el operador de negación <b>!</b>, JavaScript convierte el valor
           a booleano y lo invierte. Esto significa que el bloque se ejecutará si
-          <b>user.id</b> es <b>CUALQUIER</b> valor falsy:
+          <b> user.id</b> es <b>CUALQUIER</b> valor falsy:
         </p>
         <ul className="bullet font-mono">
           <li> undefined (Se ejecuta) ✅</li>
