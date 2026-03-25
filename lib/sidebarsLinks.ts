@@ -7,8 +7,13 @@ export interface SideBarLinkType {
 
 export const sidebarLinks = [
   {
-    title: "Documentación",
+    title: "Condicionales",
     href: "#",
+    active: false,
+    subItems: [
+      { title: "Condicionales del Dom", href: "/condicionales-react" },
+      { title: "Falsy/Thruty", href: "/falsy-thruty" },
+    ],
   },
   {
     title: "Components UI",
@@ -21,15 +26,15 @@ export const sidebarLinks = [
     ],
   },
   {
-    title:"Components Radix-UI",
-    href:"/radix-ui",
+    title: "Components Radix-UI",
+    href: "/radix-ui",
     active: false,
-    subItems:[
-      {title:"Button",href:"/button-radix"},
-      {title:"DropDown Menu",href:"/dropdownmenu"},
-      {title:"Input Label",href:"/input-label"},
-      {title:"Modal",href:"/modal-radix"},
-      {title:"Switch",href:"/switch-radix"},
-    ]
-  }
+    subItems: [
+      { title: "Button", href: "/button-radix" },
+      { title: "DropDown Menu", href: "/dropdownmenu" },
+      { title: "Input Label", href: "/input-label" },
+      { title: "Modal", href: "/modal-radix" },
+      { title: "Switch", href: "/switch-radix" },
+    ],
+  },
 ];

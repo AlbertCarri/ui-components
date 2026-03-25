@@ -57,7 +57,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, height }) => {
   };
 
   return (
-    <div className="relative mt-12 w-3/4">
+    <div className="relative mt-8 w-3/4">
       <button
         onClick={handleCopy}
         className="absolute w-16 p-2 text-sm text-amber-50 rounded-xl right-4 top-2 cursor-pointer"

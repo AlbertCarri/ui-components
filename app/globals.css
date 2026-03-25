@@ -21,7 +21,7 @@
 /* Viñetas puntos*/
 
 .bullet {
-  @apply list-disc pl-14 mt-4 text-gray-400 text-xl/8;
+  @apply list-disc pl-14 mt-4 text-gray-200 text-xl/8;
 }
 
 /* Títulos h1,h2.......*/
@@ -41,11 +41,11 @@
 /* Texto de párrafo normal*/
 
 .text-base {
-  @apply mt-4 text-xl text-gray-400;
+  @apply mt-4 text-xl text-gray-300;
 }
 
-.code{
-  @apply font-mono bg-gray-700 p-4 rounded-2xl
+.code {
+  @apply font-mono bg-gray-700 p-4 rounded-2xl;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,4 +59,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+}
+
+b {
+  font-variation-settings: 800px;
+  color: chocolate;
 }
