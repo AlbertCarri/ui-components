@@ -68,15 +68,15 @@ export default function FalsyThruty() {
           Uno de los conceptos que más {'"bugs"'} genera en JavaScript si no se
           domina bien. En JavaScript, los valores no son solo su tipo de dato,
           sino que tienen un <b>valor inherente de veracidad</b> cuando se
-          evalúan en un contexto booleano (como un `if`).
+          evalúan en un contexto booleano (como un <b>if</b>).
         </p>
         <br></br>
         <h2 className="title-lg"> 1. La lista negra: Los 7 Falsy</h2>
         <br></br>
         <p className="text-base">
-          En JavaScript, solo existen **7 valores** que siempre se evalúan como
-          `false`. Si tu variable contiene cualquiera de estos, el `if
-          (variable)` **no se cumplirá**:
+          En JavaScript, solo existen <b>7 valores</b> que siempre se evalúan como
+          <b>false</b>. Si tu variable contiene cualquiera de estos, el if
+          (variable) <b>no se cumplirá</b>:
         </p>
         <br></br>
         <table className="text-lg border-collapse border border-gray-400 text-center">
@@ -152,10 +152,10 @@ export default function FalsyThruty() {
           </tbody>
         </table>
         <br />
-        <h2 className="title-lg">2. El peligro del `0` y los Strings vacíos</h2>
+        <h2 className="title-lg">2. El peligro del 0 y los Strings vacíos</h2>
         <p className="text-base">
           Este es el escenario donde más errores ocurren en lógica de negocio
-          (como en tu CMS de gastronomía o el sistema de suscripciones):
+          (como en sistema de negocio cuando algo es gratis):
         </p>
         <h2 className="title-lg"> Caso A: El contador de stock</h2>
         <CodeBlock code={code} language="tsx" height={300} />
@@ -207,7 +207,7 @@ export default function FalsyThruty() {
           2. Tabla de Comparaciones {'"Peligrosas"'}
         </h2>
         <p className="text-base">
-          Esta tabla muestra por qué **nunca** deberías usar `==` para validar
+          Esta tabla muestra por qué <b>nunca</b> deberías usar == para validar
           datos sensibles (como estados de suscripción o montos de pago):
         </p>
         <br />
@@ -325,7 +325,7 @@ export default function FalsyThruty() {
         <p className="text-base">
           Como <code>NaN === NaN</code> es <code>false</code>, si alguna vez
           necesitas saber si un resultado matemático falló, no uses el
-          comparador. Usa la función nativa: `Number.isNaN(valor)`
+          comparador. Usa la función nativa: <b>Number.isNaN(valor)</b>
         </p>
         <h2 className="title-lg">
           Esto es muy usado pero no siempre es seguro
@@ -336,17 +336,17 @@ export default function FalsyThruty() {
           </code>{" "}
           es la forma más común y {'"limpia"'} (idiomática) que verás en el
           código moderno de JavaScript y React. Sin embargo, hay una
-          **diferencia técnica crucial** entre usar `!user.id` y `user.id ==
-          null`. Para tu libro, esta distinción es el nivel {'"Senior"'}:
+          <b>diferencia técnica crucial</b> entre usar <b>!user.id</b> y <b>user.id ==
+          null</b>. Para tu libro, esta distinción es el nivel {'"Senior"'}:
         </p>
         <h2 className="title-lg">
           {" "}
           1. El alcance de <code>(!user.id)</code> (El {'"Cazador de Falsys"'})
         </h2>
         <p className="text-base">
-          Cuando usas el operador de negación `!`, JavaScript convierte el valor
+          Cuando usas el operador de negación <b>!</b>, JavaScript convierte el valor
           a booleano y lo invierte. Esto significa que el bloque se ejecutará si
-          `user.id` es **CUALQUIER** valor falsy:
+          <b>user.id</b> es <b>CUALQUIER</b> valor falsy:
         </p>
         <ul className="bullet font-mono">
           <li> undefined (Se ejecuta) ✅</li>
