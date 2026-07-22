@@ -7,6 +7,12 @@ export interface SideBarLinkType {
 
 export const sidebarLinks = [
   {
+    title: "Herramientas más usadas",
+    href: "#",
+    active: false,
+    subItems: [{ title: "Validaciones con Zod", href: "/herramientas-zod" }],
+  },
+  {
     title: "Condicionales",
     href: "#",
     active: false,
