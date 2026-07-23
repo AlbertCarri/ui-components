@@ -263,12 +263,13 @@ export default function HerramientaZod() {
           entre el cliente y el servidor (Server Actions, endpoints o APIs) es
           justamente el uso donde Zod brilla sin rodeos. <br />
           <i className="text-2xl">
-            "La validación en el servidor es obligatoria para garantizar la
-            seguridad de tus datos.""
+            {
+              '"La validación en el servidor es obligatoria para garantizar la seguridad de tus datos."'
+            }
           </i>
         </p>
         <br></br>
-        <h2 className="title-lg">1. Instalación desde cero con "pnpm"</h2>
+        <h2 className="title-lg">1. Instalación desde cero con {'"pnpm"'}</h2>
         <p className="text-base">En el raíz de tu proyecto:</p>
         <p className="code mt-4">pnpm add zod</p>
         <h2 className="title-lg">2. Métodos esenciales de Zod</h2>
